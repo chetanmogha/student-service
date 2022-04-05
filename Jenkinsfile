@@ -5,7 +5,7 @@ agent any
 
 parameters {
 string(name:"VERSION", defaultValue:'1', description:'version to deploy')
-choice(name:"Version", choices : ['1.1', '1.2', '1.3'], description:'')
+choice(name:"Version", choices : ['1.1', '1.2', '1.3'], description:'Choice')
 booleanParam(name:'executeTests', defaultValue:true, description:"skip tests")
 }
 
@@ -19,8 +19,8 @@ maven 'maven'
 
 
 environment {
-ORG_NAME = "IPU"
-APP_NAME = "Student-service"
+ORG_NAME = "ipu"
+APP_NAME = "student-service"
 APP_VERSION = "1.0-SNAPSHOT"
 APP_CONTEXT_ROOT = "/"
 APP_LISTENING_PORT = "8400"
